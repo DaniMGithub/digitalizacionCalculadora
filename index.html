@@ -19,8 +19,78 @@
     <p>BC Lorem - Todos los derechos reservados ©</p>
 </footer>
 <body>
+    <!-- Explicación -->
+    <div class="container">
+      <h1>Proyectos de digitalización</h1>
+      <h2>Calculadora de espacio de almacenamiento</h2>
+    <div class="explicacion">
+      <h2>Parámetros de la imagen digital</h2>
+      <p>A partir de un proyecto de digitalización ¿cómo calcular el tamaño del archivo? ¿cómo calculo cuanto espacio me ocupará en el servidor?</p>
+    <p>Se calcula multiplicando </p>
+    <ul>
+      <li>el área de superficie (ancho x alto) del documento a ser digitalizado (en pulgadas)</li>
+      <li>por la profundidad de bits (en bits/pixel)</li>
+      <li>por el cuadrado de la resolución.</li>
+    </ul>
+    <h2>En principio calculamos la dimensión del documento en pulgadas.</h2>   
+    <p>Ejmplo:</p>
+    <p> el tamaño DIN A4 es DIN A4 = 21,0 cm x 29,7 cm</p>
+    <p> en pulgadas sería 8,27” x 11,69” </p>
+
+       <!-- Primer calculadora para pasar a pulgadas -->     
+    </div>
+    <div>
+      <h2>Dimensión</h2>
+      <p>Medidas horizontales y verticales expresadas en píxeles.</p>
+      <p>DIN A4 = 21,0 cm x 29,7 cm</p>
+
+      <ul>
+        <li>Ancho: 21,0 cm à 8,27“ à 8,27” x 300 dpi = 2.500 píxeles.</li>
+        <li>Alto: 29,7 cm à 11,69” à 11,69” x 300 dpi = 3.500 píxeles.</li>
+        <li>Dimensión total DIN A4: 2.500 X 3.500 = 8.750.000 píxeles.</li>
+      </ul>
+      </div>
+      <div>
+        <h2>Parámetros de la imagen digital</h2>
+      <p>Profundidad de bits</p>
+      <p>Cantidad de bits utilizados para definir cada píxel. Cuanto mayor es la profundidad de bits, mayor es la cantidad de tonos que pueden ser representados.</p>
+      <p>Bitonal: píxeles de 1 bit</p>
+      <p>Tono de grises: píxeles de entre 2 y 8 bits</p>
+      <p>Color: píxeles de entre 8 y 24 bits</p>
+      <p></p>
+      <p></p>
+    </div>
+    <div>
+      
+    </div>
+     <!-- Formulario para crear la calculadora -->
+      <form>
+        <div class="form-group">
+          <label for="tamanioPag">Tamaño de página en cm<sup>2</sup>:</label>
+          <input type="number" step="0.01" min="0" class="form-control" id="tamanioPag" placeholder="Ejemplo: 21.0">
+        </div>
+        <div class="form-group">
+          <label for="resolucion">Resolución en dpi:</label>
+          <input type="number" step="1" min="0" class="form-control" id="resolucion" placeholder="Ejemplo: 300">
+        </div>
+        <div class="form-group">
+          <label for="numeroPag">Número de páginas:</label>
+          <input type="number" step="1" min="0" class="form-control" id="numeroPag" placeholder="Ejemplo: 100">
+        </div>
+        <div class="form-group">
+          <label for="tamanioAlmacenamiento">Unidades de almacenamiento:</label>
+          <select class="form-control" id="tamanioAlmacenamiento">
+            <option>KB</option>
+            <option selected>MB</option>
+            <option>GB</option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="calcular()">Calcular</button>
+      </form>
+      <p id="result"></p>
+    </div>
    
-    <!-- JavaScript Bundle with Popper -->
+    <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <!-- Mi JavaScript --> 
   <script src="./js/sript.js"></script>    
