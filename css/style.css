@@ -1,0 +1,98 @@
+/*media queris*/
+@media screen and (max-width: 768px) {
+    /* Estilos que se aplicarán cuando el ancho de la pantalla sea de 768px o menos */
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos que se aplicarán cuando el ancho de la pantalla sea de 769px o más, y de 1024px o menos */
+  }
+  
+  @media screen and (min-width: 1025px) {
+    /* Estilos que se aplicarán cuando el ancho de la pantalla sea de 1025px o más */
+  }
+  
+/*colores*/   
+body {
+background-color: #fdfd96;
+color: #333;
+}
+
+h1 {
+color: #f06292;
+}
+
+h2 {
+    color: #dda272;
+    }
+
+label {
+color: #ba68c8;
+}
+button {
+background-color: #f06292;
+color: #fff;
+border-color: #f06292;
+}
+button:hover {
+background-color: #ba68c8;
+border-color: #ba68c8;
+}
+#result {
+color: #4caf50;
+}
+    
+.container {
+max-width: 31.25em; 
+margin: 0 auto;
+padding: 1.25em; 
+background-color: #FFF;
+border-radius: 0.3125em; 
+box-shadow: 0 0 0.3125em rgba(0, 0, 0, 0.1); 
+}
+    
+h1 {
+text-align: center;
+margin-bottom: 1.25em; 
+}
+    
+h2 {
+text-align: center;
+margin-bottom: 0.625em; 
+}
+    
+form label {
+display: block;
+margin-bottom: 0.625em; 
+font-weight: bold;
+}
+    
+form input {
+width: 100%;
+padding: 0.5em; 
+border: 0.0625em solid #DDD; 
+border-radius: 0.3125em; 
+margin-bottom: 1.25em; 
+}
+    
+form select {
+width: 100%;
+padding: 0.5em; 
+border: 0.0625em solid #DDD; 
+border-radius: 0.3125em; 
+margin-bottom: 1.25em; 
+}
+
+form button {
+background-color: #337AB7;
+color: #FFF;
+padding: 0.625em 1.25em; 
+border: none;
+border-radius: 0.3125em; 
+cursor: pointer;
+}
+
+#result {
+text-align: center;
+margin-top: 1.25em; 
+font-weight: bold;
+}
