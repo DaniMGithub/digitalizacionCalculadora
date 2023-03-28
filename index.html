@@ -23,7 +23,7 @@
       <h3>¡Bienvenido!</h3>
     <div class="explicacion">
      <p>A partir de un proyecto de digitalización a gran escala alguna vez se preguntó ¿cuáles son los parámetros de la imagen digital? ¿cómo calculo cuanto espacio me ocuparán todos los archivos digitalizados en el servidor?</p>
-    <p> ¡Está usted en el lugar correcto! Aquí aprenderemos desde cómo calcular el tamaño del archivo hasta PROYECTAR el espacio que ocupará en la etapa final un proyecto de digitalización entero. No perdamos más tiempo y comencemos!</p>
+    <p> ¡Está usted en el lugar correcto! Aquí aprenderemos desde cómo calcular el tamaño del archivo hasta PROYECTAR el espacio que ocupará en la etapa final un proyecto de digitalización entero. No perdamos más tiempo y ¡comencemos!</p>
     <h3> El tamaño de un archivo se calcula multiplicando: </h3>
     <ul>
       <li>el área de superficie (ancho x alto) del documento a ser digitalizado (en pulgadas)</li>
@@ -35,7 +35,22 @@
     <p> el tamaño DIN A4 es DIN A4 = 21,0 cm x 29,7 cm</p>
     <p> en pulgadas sería 8,27” x 11,69” </p>
 
-       <!-- Primer calculadora para pasar a pulgadas -->     
+       <!-- Primer calculadora para pasar a pulgadas --> 
+       <form>
+        <div class="form-group">
+          <h3>Transformación a pulgadas</h3>
+          <label for="altoPag">Alto de página en cm:</label>
+          <input type="number" step="0.01" min="0" class="form-control" id="altoPag" placeholder="Ejemplo: 21.0">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="calculando()">Calcular</button>
+        <div class="form-group">
+          <label for="anchoPag">Ancho de página en cm:</label>
+          <input type="number" step="1" min="0" class="form-control" id="anchoPag" placeholder="Ejemplo: 29">
+        </div>
+        <div class="form-group"> 
+        </div>
+        <button type="button" class="btn btn-primary" onclick="calculando()">Calcular</button>
+      </form>    
     </div>
     <div>
       <h2>Dimensión</h2>
