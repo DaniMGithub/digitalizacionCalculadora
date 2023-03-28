@@ -22,8 +22,14 @@ color: #f06292;
 }
 
 h2 {
-    color: #dda272;
+    color: #fe9393;
     }
+
+h3 {
+color: #B93AF8;
+}
+
+
 
 label {
 color: #ba68c8;
@@ -41,25 +47,52 @@ border-color: #ba68c8;
 color: #4caf50;
 }
     
+
+
+.container .container1 {
+margin-top: 2em;
+margin-bottom: 2em; 
+max-width: 40em;
+align-self: center;
+padding: 1.25em; 
+background-color: #FFF;
+border-radius: 0.3125em; 
+box-shadow: 0 0 0.3125em rgba(0, 0, 0, 0.1); 
+    }
+
 .container {
-max-width: 31.25em; 
-margin: 0 auto;
+margin-top: 2em;
+margin-bottom: 2em; 
+max-width: 32.25em; 
 padding: 1.25em; 
 background-color: #FFF;
 border-radius: 0.3125em; 
 box-shadow: 0 0 0.3125em rgba(0, 0, 0, 0.1); 
 }
+
+
     
 h1 {
 text-align: center;
-margin-bottom: 1.25em; 
+margin-bottom: 0.625em; 
 }
     
 h2 {
 text-align: center;
 margin-bottom: 0.625em; 
 }
-    
+
+h3 {
+    text-align: center;
+    margin-bottom: 0.625em; 
+    }
+
+p {
+   text-align: left;
+   text-align: justify;
+   margin-bottom: 0.625em; 
+     }
+
 form label {
 display: block;
 margin-bottom: 0.625em; 
@@ -96,3 +129,8 @@ text-align: center;
 margin-top: 1.25em; 
 font-weight: bold;
 }
+
+footer p{
+    text-align: center;
+    margin-bottom: 0.625em; 
+    }
