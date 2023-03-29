@@ -31,8 +31,9 @@
       <li>por el cuadrado de la resolución.</li>
     </ul>
     <h2>En principio calculamos la dimensión del documento en pulgadas.</h2>   
-    <p>Ejmplo:</p>
-    <p> el tamaño DIN A4 es DIN A4 = 21,0 cm x 29,7 cm</p>
+    <p>Ejemplo:</p>
+    <p> Si el tamaño del papel es DIN A4 </p>
+    <p> DIN A4 = 21,0 cm x 29,7 cm</p>
     <p> en pulgadas sería 8,27” x 11,69” </p>
 
        <!-- Primer calculadora para pasar a pulgadas --> 
@@ -79,30 +80,7 @@
   </div>
      <!-- Formulario para crear la calculadora -->
      <div class="container">
-      <form>
-        <div class="form-group">
-          <label for="tamanioPag">Tamaño de página en cm<sup>2</sup>:</label>
-          <input type="number" step="0.01" min="0" class="form-control" id="tamanioPag" placeholder="Ejemplo: 21.0">
-        </div>
-        <div class="form-group">
-          <label for="resolucion">Resolución en dpi:</label>
-          <input type="number" step="1" min="0" class="form-control" id="resolucion" placeholder="Ejemplo: 300">
-        </div>
-        <div class="form-group">
-          <label for="numeroPag">Número de páginas:</label>
-          <input type="number" step="1" min="0" class="form-control" id="numeroPag" placeholder="Ejemplo: 100">
-        </div>
-        <div class="form-group">
-          <label for="tamanioAlmacenamiento">Unidades de almacenamiento:</label>
-          <select class="form-control" id="tamanioAlmacenamiento">
-            <option>KB</option>
-            <option selected>MB</option>
-            <option>GB</option>
-          </select>
-        </div>
-        <button type="button" class="btn btn-primary" onclick="calcular()">Calcular</button>
-      </form>
-      <p id="result"></p>
+      
     </div>
     </div>
    

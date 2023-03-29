@@ -1,16 +1,16 @@
 /*media queris*/
 @media screen and (max-width: 768px) {
-    /* Estilos que se aplicarán cuando el ancho de la pantalla sea de 768px o menos */
-  }
-  
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Estilos que se aplicarán cuando el ancho de la pantalla sea de 769px o más, y de 1024px o menos */
-  }
-  
-  @media screen and (min-width: 1025px) {
-    /* Estilos que se aplicarán cuando el ancho de la pantalla sea de 1025px o más */
-  }
-  
+  /* Estilos que se aplicarán cuando el ancho de la pantalla sea de 768px o menos */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Estilos que se aplicarán cuando el ancho de la pantalla sea de 769px o más, y de 1024px o menos */
+}
+
+@media screen and (min-width: 1025px) {
+  /* Estilos que se aplicarán cuando el ancho de la pantalla sea de 1025px o más */
+}
+
 /*colores*/   
 body {
 background-color: #fdfd96;
@@ -22,8 +22,8 @@ color: #f06292;
 }
 
 h2 {
-    color: #fe9393;
-    }
+  color: #fe9393;
+  }
 
 h3 {
 color: #B93AF8;
@@ -46,7 +46,7 @@ border-color: #ba68c8;
 #result {
 color: #4caf50;
 }
-    
+  
 
 
 .container .container1 {
@@ -58,7 +58,7 @@ padding: 1.25em;
 background-color: #FFF;
 border-radius: 0.3125em; 
 box-shadow: 0 0 0.3125em rgba(0, 0, 0, 0.1); 
-    }
+  }
 
 .container {
 margin-top: 2em;
@@ -71,44 +71,54 @@ box-shadow: 0 0 0.3125em rgba(0, 0, 0, 0.1);
 }
 
 
-    
+  
 h1 {
 text-align: center;
 margin-bottom: 0.625em; 
 }
-    
+  
 h2 {
 text-align: center;
 margin-bottom: 0.625em; 
 }
 
 h3 {
-    text-align: center;
-    margin-bottom: 0.625em; 
-    }
+  text-align: center;
+  margin-bottom: 0.625em; 
+  }
 
 p {
-   text-align: left;
-   text-align: justify;
-   margin-bottom: 0.625em; 
-     }
+ text-align: left;
+ text-align: justify;
+ margin-bottom: 0.625em; 
+   }
+
+form{
+border-style: ridge;
+border-color: #f06292;
+border-width: 0.5em;
+border-radius: 0.5em;
+text-align: left;
+text-align: justify;
+padding: 2em;
+}
 
 form label {
 display: block;
 margin-bottom: 0.625em; 
 font-weight: bold;
 }
-    
+  
 form input {
-width: 100%;
+width: 70%;
 padding: 0.5em; 
 border: 0.0625em solid #DDD; 
 border-radius: 0.3125em; 
 margin-bottom: 1.25em; 
 }
-    
+  
 form select {
-width: 100%;
+width: 70%;
 padding: 0.5em; 
 border: 0.0625em solid #DDD; 
 border-radius: 0.3125em; 
@@ -131,6 +141,13 @@ font-weight: bold;
 }
 
 footer p{
-    text-align: center;
-    margin-bottom: 0.625em; 
-    }
+  text-align: center;
+  margin-bottom: 0.625em; 
+  }
+
+.resaltado{
+border-style: ridge;
+border-color: #f06292;
+border-width: 1em;
+border-radius: 0.5em;
+}
