@@ -16,42 +16,37 @@
 </head>
 
 <body>
-    <!-- Explicación -->
-    <div class="container container1">
-      <h1>Digitalización</h1>
-      <h2>Calculadora de espacio de almacenamiento</h2>
-      <h3>¡Bienvenido!</h3>
-    <div class="explicacion">
-     <p>A partir de un proyecto de digitalización a gran escala alguna vez se preguntó ¿cuáles son los parámetros de la imagen digital? ¿cómo calculo cuanto espacio me ocuparán todos los archivos digitalizados en el servidor?</p>
-    <p> ¡Está usted en el lugar correcto! Aquí aprenderemos desde cómo calcular el tamaño del archivo hasta PROYECTAR el espacio que ocupará en la etapa final un proyecto de digitalización entero. No perdamos más tiempo y ¡comencemos!</p>
-    <h3> El tamaño de un archivo se calcula multiplicando: </h3>
-    <ul>
-      <li>el área de superficie (ancho x alto) del documento a ser digitalizado (en pulgadas)</li>
-      <li>por la profundidad de bits (en bits/pixel)</li>
-      <li>por el cuadrado de la resolución.</li>
-    </ul>
-    <h2>En principio calculamos la dimensión del documento en pulgadas.</h2>   
-    <p>Ejemplo:</p>
-    <p> Si el tamaño del papel es DIN A4 </p>
-    <p> DIN A4 = 21,0 cm x 29,7 cm</p>
-    <p> en pulgadas sería 8,27” x 11,69” </p>
+  <!-- Explicación -->
+  <div class="container container1">
+    <h1>Digitalización</h1>
+    <h2>Calculadora de espacio de almacenamiento</h2>
+    <h3>¡Bienvenido!</h3>
+  <div class="explicacion">
+   <p>A partir de un proyecto de digitalización a gran escala ¿cómo calculo cuanto espacio me ocuparán los archivos digitalizados en el servidor?</p>
+  <p> Aquí aprenderemos desde cómo calcular el tamaño que ocupará un archivo hasta <strong>proyectar</strong> el espacio que ocupará en la etapa final un proyecto de digitalización entero. No perdamos más tiempo y ¡comencemos!</p>
+  <div class="resaltado">
+  <h3> El tamaño de un archivo se calcula multiplicando: </h3>
+  <ul>
+    <li>el área de superficie (ancho x alto) del documento a ser digitalizado (en pulgadas)</li>
+    <li>por la profundidad de bits (en bits/pixel)</li>
+    <li>por el cuadrado de la resolución.</li>
+  </ul>
+  </div>
+  <h2>1) Calculamos la dimensión del documento en pulgadas.</h2>   
+  <p>Ejemplo:</p>
+  <p> el tamaño del documento que digitalizaremos es DIN A4 = 21,0 cm x 29,7 cm</p>
+  <p> en pulgadas sería 8,27” x 11,69” </p>
 
-       <!-- Primer calculadora para pasar a pulgadas --> 
-       <form>
-        <div class="form-group">
-          <h3>Transformación a pulgadas</h3>
-          <label for="altoPag">Alto de página en cm:</label>
-          <input type="number" step="0.01" min="0" class="form-control" id="altoPag" placeholder="Ejemplo: 21.0">
-        </div>
-        <button type="button" class="btn btn-primary" onclick="calculando()">Calcular</button>
-        <div class="form-group">
-          <label for="anchoPag">Ancho de página en cm:</label>
-          <input type="number" step="1" min="0" class="form-control" id="anchoPag" placeholder="Ejemplo: 29">
-        </div>
-        <div class="form-group"> 
-        </div>
-        <button type="button" class="btn btn-primary" onclick="calculando()">Calcular</button>
-      </form>    
+    <!-- Primer calculadora para pasar a pulgadas -->         
+    <form>
+      <label for="cm">Ingresa el alto o el ancho del documento en centímetros:</label>
+      <input type="number" id="cm" name="cm" step="any"><br><br>
+      <button type="button" onclick="convertir()">Convertir</button><br><br>
+      <label for="pulgadas">La longitud en pulgadas es:</label>
+      <input type="number" id="pulgadas" name="pulgadas" readonly>
+    </form>
+   </div>     
+ <!-- Fin de la Primer calculadora y continúa la explicacón -->  
     </div>
     <div>
       <h2>Dimensión</h2>
