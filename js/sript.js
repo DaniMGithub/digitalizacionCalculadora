@@ -43,7 +43,7 @@ function division() {
   document.getElementById("resultadoDivision").textContent = resultadoDivision;
 }
 
-// // // // // // // // // //  Función de cuarta calculadora para obtener el peso del archivo  // // // // // // // // // // 
+// // // // // // // // // //  Función de cuarta calculadora para obtener el peso total del proyecto en GB o TB  // // // // // // // // // // 
 function calculadoraFinal() {
   var valor = document.getElementById("valor").value;
   var unidad = document.getElementById("unidad").value;
