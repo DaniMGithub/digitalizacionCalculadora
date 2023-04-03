@@ -1,4 +1,4 @@
-// // // // // // // // // //  Confirm y Alert para las cookies // // // // // // // // // // 
+// // // // // // // // // // Confirm y Alert para las cookies // // // // // // // // // // 
 var aceptaCookies = confirm("Este sitio web utiliza cookies para mejorar su experiencia de navegación. ¿Acepta las cookies?");
 
 if (aceptaCookies) {
@@ -33,4 +33,32 @@ function calculando() {
   var pixelAncho = document.getElementById("pixelAncho").value;
   var resultin = pixelAlto * pixelAncho;
   document.getElementById("resultin").textContent = resultin;
+}
+
+// // // // // // // // // //  Función de cuarta calculadora para obtener el peso del archivo  // // // // // // // // // // 
+function division() {
+  var pixelTotal = document.getElementById("pixelTotal").value;
+  var profundidadBits = document.getElementById("profundidadBits").value;
+  var resultadoDivision = pixelTotal / profundidadBits;
+  document.getElementById("resultadoDivision").textContent = resultadoDivision;
+}
+
+// // // // // // // // // //  Función de cuarta calculadora para obtener el peso del archivo  // // // // // // // // // // 
+function calculadoraFinal() {
+  var valor = document.getElementById("valor").value;
+  var unidad = document.getElementById("unidad").value;
+  var medida;
+
+  switch (unidad) {
+    case "gb":
+    medida = valor / 1024;
+    break;     
+    case "tb":
+      medida = valor / (1024 * 1024);
+      break;
+    default:
+      medida = "Unidad no válida";
+  }
+
+  document.getElementById("medida").textContent = medida;
 }
