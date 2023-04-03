@@ -58,7 +58,18 @@
     <li>Dimensión total DIN A4: 2.500 X 3.500 = 8.750.000 píxeles.</li>
   </ul>
   </div>
-   <!-- Segunda calculadora para obtener la dimensión en píxeles -->       
+   <!-- Segunda calculadora para obtener la dimensión en píxeles -->
+   <form>
+    <label for="pulgad">Pulgadas:</label>
+    <input type="number" id="pulgad" name="pulgad">
+    <br>
+    <label for="dpi">dpi:</label>
+    <input type="number" id="dpi" name="dpi">
+    <br>          
+    <button type="button" onclick="calcular()">Calcular</button><br><br>           
+    <label for="ok">El resultado es: <span id="resultado"></span> píxeles</label>      
+  </form>             
+ <!-- Tercera calculadora para obtener la dimensión total en píxeles -->              
 
    
     <!-- Bootstrap -->
