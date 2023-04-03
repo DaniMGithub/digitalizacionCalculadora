@@ -46,38 +46,20 @@
       <input type="number" id="pulgadas" name="pulgadas" readonly>
     </form>
    </div>     
- <!-- Fin de la Primer calculadora y continúa la explicacón -->  
-  
-    <div>
-      <h2>Dimensión</h2>
-      <p>Medidas horizontales y verticales expresadas en píxeles.</p>
-      <p>DIN A4 = 21,0 cm x 29,7 cm</p>
-
-      <ul>
-        <li>Ancho: 21,0 cm à 8,27“ à 8,27” x 300 dpi = 2.500 píxeles.</li>
-        <li>Alto: 29,7 cm à 11,69” à 11,69” x 300 dpi = 3.500 píxeles.</li>
-        <li>Dimensión total DIN A4: 2.500 X 3.500 = 8.750.000 píxeles.</li>
-      </ul>
-      </div>
-      <div>
-        <h2>Parámetros de la imagen digital</h2>
-      <p>Profundidad de bits</p>
-      <p>Cantidad de bits utilizados para definir cada píxel. Cuanto mayor es la profundidad de bits, mayor es la cantidad de tonos que pueden ser representados.</p>
-      <p>Bitonal: píxeles de 1 bit</p>
-      <p>Tono de grises: píxeles de entre 2 y 8 bits</p>
-      <p>Color: píxeles de entre 8 y 24 bits</p>
-      <p></p>
-      <p></p>
-    </div>
-    <div>
-
-    </div>
+ <!-- Fin de la Primer calculadora y continúa la explicacón -->    
+ <div>
+  <h2>2) Dimensión</h2>
+  <p>Al final del cálculo obtendremos la dimensíon de todo el documento expresada en pixeles</p>
+  <p>Siguiendo con nuestro ejemplo, dijimos que un documento formato DIN A4 (de 21,0 cm x 29,7 cm) es el equivalente a 8,27“ x 11,69”. Así introducimos una nueva medida denominada dpi. dpi hace referencia a el número de puntos impresos que hay en una pulgada. Los estandares internacionales de digitalización son los que establecen las recomendaciones de cuantos dpi según el tipo de documento a capturar. Para mayor referencia sobre estándares internacionales y cantidad de dpi le recomendamos dirigirse a la página 69 de <a href="https://www.bn.gov.ar/resources/bibliotecarios/politica-digit-bnmm.pdf">la Política de digitalización de la Biblioteca Nacional</a></p>
+  <p>En nuestro ejemplo del documento DIN A4 lo multiplicaremos por la cantidad de dpi y obtendremos la cantidad de pixeles. Por último multiplicaremos pixeles x pixeles y obtendremos un número muy grande que representa la dimensión total del documento el píxeles:</p>  
+  <ul>
+    <li>Ancho: 8,27” x 300 dpi = 2.500 píxeles.</li>
+    <li>Alto: 11,69” x 300 dpi = 3.500 píxeles.</li>
+    <li>Dimensión total DIN A4: 2.500 X 3.500 = 8.750.000 píxeles.</li>
+  </ul>
   </div>
-     <!-- Formulario para crear la calculadora -->
-     <div class="container">
-      
-    </div>
-    </div>
+   <!-- Segunda calculadora para obtener la dimensión en píxeles -->       
+
    
     <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
