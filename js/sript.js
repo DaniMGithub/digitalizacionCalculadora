@@ -17,3 +17,20 @@ function convertir() {
     const pulgadas = cm / 2.54;
     document.getElementById("pulgadas").value = pulgadas.toFixed(2);
   }
+
+  
+// // // // // // // // // //  Función de segunda calculadora para obtener la dimensión en dpi // // // // // // // // // // 
+function calcular() {
+  var pulgad = document.getElementById("pulgad").value;
+  var dpi = document.getElementById("dpi").value;
+  var resultado = pulgad * dpi;
+  document.getElementById("resultado").textContent = resultado;
+}
+
+// // // // // // // // // //  Función de tercera  calculadora para obtener la dimensión total en pixeles // // // // // // // // // // 
+function calculando() {
+  var pixelAlto = document.getElementById("pixelAlto").value;
+  var pixelAncho = document.getElementById("pixelAncho").value;
+  var resultin = pixelAlto * pixelAncho;
+  document.getElementById("resultin").textContent = resultin;
+}

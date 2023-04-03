@@ -90,7 +90,34 @@
       <li>Color: píxeles de entre 8 y 24 bits</li>
     </ul>
     <p>Así nuestro último cálculo será dividir la Dimensión total en pixeles por la profundidad de bits. Esto nos dará la cantidad de MB</p>
-   <!-- Cuarta calculadora para obtener el peso de un archivo -->        
+   <!-- Cuarta calculadora para obtener el peso de un archivo --> 
+   <form>
+    <label for="pixelTotal">Pixeles total:</label>
+    <input type="number" id="pixelTotal" name="pixelTotal">
+    <br>
+    <label for="profundidadBits">Profundidad de Bits</label>
+    <input type="number" id="profundidadBits" name="profundidadBits">
+    <br>
+    <button type="button" onclick="division()">Calcular</button><br><br>                        
+    <label for="oki">El peso total del documento será de <span id="resultadoDivision"></span>MB</label>      
+  </form>
+<!-- 5ta calculadora para obtener el peso de un archivo en distintas medidas --> 
+  <div>
+      <form>
+        <label for="valor">Ingrese valor en MB:</label>
+        <input type="number" id="valor" name="valor">
+        <br>
+        <label for="unidad">Unidad:</label>
+        <select id="unidad" name="unidad">        
+        <option value="gb">GB</option>
+        <option value="tb">TB</option>
+        </select>
+        <br>        
+        <button type="button" onclick="calculadoraFinal()">Transformar medida</button><br><br>
+    <label>El resultado es: <span id="medida"></span></label>
+   </form>
+    </div>
+  </div>       
 
    
     <!-- Bootstrap -->
@@ -99,6 +126,7 @@
   <script src="./js/sript.js"></script>    
 </body>
 <footer>
+  <p>Esta calculadora se basa en contenidos de clase dictados por Miguel Kiperszmid (FAHCE-UNLP) y Evelin Heidel (Wikimedia - Uruguay) en 2018 en la Universidad Nacional de La Plata.</p>
   <p>Calculadora de digitalización - Todos los derechos reservados ©</p>
 </footer>
 </html>
